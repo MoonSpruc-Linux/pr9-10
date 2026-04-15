@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/style.css" />
+		<link rel="stylesheet" href="../styles/responsive.css" />
+		<script src="../js/main.js" defer></script>
+		<title>Про мене</title>
+	</head>
+	<body>
+		<header>
+			<nav id="main-nav">
+				<a href="../index.html">Головна</a>
+				|
+				<a href="about.html">Про мене</a>
+				|
+				<a href="contact.html">Контакти</a>
+				|
+				<a href="catalog.html">Католог</a>
+
+				<button id="menu-toggle" aria-expanded="false">☰</button>
+				<button id="theme-toggle">Перемикач теми</button>
+			</nav>
+		</header>
+
+		<main>
+			<div class="container">
+				<h1>Про мене</h1>
+
+				<p>
+					Мене звати Веліксар Андрій, вивчаю веб-розробку. Я навчаюсь створювати
+					сайти на HTML.
+				</p>
+
+				<h2>Моє відео</h2>
+
+				<video controls width="480">
+					<source src="../assets/media/demo.mp4" type="video/mp4" />
+					<source src="../assets/media/demo.webm" type="video/webm" />
+
+					<p>
+						Ваш браузер не підтримує відео.
+						<a href="../assets/media/demo.mp4">Завантажити відео</a>
+					</p>
+				</video>
+
+				<h2>Мій аудіотрек</h2>
+
+				<audio controls>
+					<source src="../assets/media/demo.mp3" type="audio/mpeg" />
+					<source src="../assets/media/demo.ogg" type="audio/ogg" />
+
+					<p>
+						Ваш браузер не підтримує аудіо.
+						<a href="../assets/media/demo.mp3">Завантажити аудіо</a>
+					</p>
+				</audio>
+
+				<section id="portfolio">
+					<h2>Проєкти</h2>
+					<div class="filters">
+						<button data-filter="all">Всі</button>
+						<button data-filter="web">Веб</button>
+						<button data-filter="design">Дизайн</button>
+					</div>
+					<div class="filter-items">
+						<div class="filter-item" data-category="web">Проєкт 1</div>
+						<div class="filter-item" data-category="design">Проєкт 2</div>
+						<div class="filter-item" data-category="web">Проєкт 3</div>
+					</div>
+				</section>
+
+				<section id="faq">
+					<h2>FAQ / Часті запитання</h2>
+					<div class="accordion">Питання 1</div>
+					<div class="accordion-content">
+						<p>Відповідь на питання 1</p>
+					</div>
+					<div class="accordion">Питання 2</div>
+					<div class="accordion-content">
+						<p>Відповідь на питання 2</p>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<footer>
+			<p>
+				&copy;
+				<span id="current-year"></span>
+				2026 Веліксар Андрій
+			</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+[
+	{
+		"id": 1,
+		"title": "HTML Course",
+		"category": "frontend",
+		"description": "Learn HTML from zero",
+		"price": 50,
+		"rating": 4.5
+	},
+	{
+		"id": 2,
+		"title": "CSS Course",
+		"category": "frontend",
+		"description": "Styling websites",
+		"price": 60,
+		"rating": 4.7
+	},
+	{
+		"id": 3,
+		"title": "UI Design",
+		"category": "design",
+		"description": "Figma basics",
+		"price": 70,
+		"rating": 4.2
+	},
+	{
+		"id": 4,
+		"title": "JavaScript",
+		"category": "frontend",
+		"description": "JS fundamentals",
+		"price": 90,
+		"rating": 4.8
+	}
+]

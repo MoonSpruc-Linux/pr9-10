@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/style.css" />
+		<link rel="stylesheet" href="../styles/responsive.css" />
+		<script src="../js/main.js" defer></script>
+		<title>Контакти</title>
+	</head>
+	<body>
+		<header>
+			<nav id="main-nav">
+				<a href="../index.html">Головна</a>
+				|
+				<a href="about.html">Про мене</a>
+				|
+				<a href="contact.html">Контакти</a>
+				|
+				<a href="catalog.html">Католог</a>
+
+				<button id="menu-toggle" aria-expanded="false">☰</button>
+				<button id="theme-toggle">Перемикач теми</button>
+			</nav>
+		</header>
+
+		<main>
+			<div class="container">
+				<h1>Catalog</h1>
+
+				<div data-loading>Loading...</div>
+
+				<div data-error style="display: none; color: red"></div>
+
+				<p>
+					<input id="search" type="text" placeholder="Search" />
+				</p>
+
+				<div class="filters">
+					<button data-category="all">All</button>
+					<button data-category="frontend">Frontend</button>
+					<button data-category="design">Design</button>
+				</div>
+
+				<select id="sort">
+					<option value="default">Default</option>
+					<option value="price">Price</option>
+					<option value="rating">Rating</option>
+				</select>
+
+				<div data-catalog></div>
+			</div>
+		</main>
+
+		<footer>
+			<p>
+				&copy;
+				<span id="current-year"></span>
+				2026 Веліксар Андрій
+			</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

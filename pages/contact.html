@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/style.css" />
+		<link rel="stylesheet" href="../styles/responsive.css" />
+		<script src="../js/main.js" defer></script>
+		<title>Контакти</title>
+	</head>
+	<body>
+		<header>
+			<nav id="main-nav">
+				<a href="../index.html">Головна</a>
+				|
+				<a href="about.html">Про мене</a>
+				|
+				<a href="contact.html">Контакти</a>
+				|
+				<a href="catalog.html">Католог</a>
+
+				<button id="menu-toggle" aria-expanded="false">☰</button>
+				<button id="theme-toggle">Перемикач теми</button>
+			</nav>
+		</header>
+
+		<main>
+			<div class="container">
+				<h1>Контакти</h1>
+
+				<form id="contact-form" action="./submit.html" method="get">
+					<h2>Зв’яжіться зі мною</h2>
+
+					<p>
+						<label for="name">Ім’я:</label>
+						<input
+							id="name"
+							name="name"
+							type="text"
+							required
+							minlength="2"
+							maxlength="30"
+						/>
+					</p>
+
+					<p>
+						<label for="email">Email:</label>
+						<input id="email" name="email" type="email" required />
+					</p>
+
+					<p>
+						<label for="phone">Телефон:</label>
+						<input id="phone" name="phone" type="tel" />
+					</p>
+
+					<p>
+						<label for="topic">Тема:</label>
+
+						<select id="topic" name="topic">
+							<option value="study">Навчання</option>
+							<option value="work">Співпраця</option>
+							<option value="other">Інше</option>
+						</select>
+					</p>
+
+					<fieldset>
+						<legend>Зручний спосіб зв’язку</legend>
+
+						<label>
+							<input type="radio" name="contactWay" value="email" checked />
+							Email
+						</label>
+
+						<label>
+							<input type="radio" name="contactWay" value="phone" />
+							Телефон
+						</label>
+					</fieldset>
+
+					<p>
+						<label for="message">Повідомлення:</label>
+						<br />
+						<textarea id="message" name="message" rows="5" cols="30"></textarea>
+					</p>
+
+					<p>
+						<label>
+							<input type="checkbox" name="agree" required />
+							Погоджуюсь з правилами
+						</label>
+					</p>
+
+					<button type="submit">Надіслати</button>
+					<button type="reset">Очистити</button>
+				</form>
+			</div>
+		</main>
+
+		<button id="back-to-top" class="hidden">↑ Вгору</button>
+
+		<footer>
+			<p>
+				&copy;
+				<span id="current-year"></span>
+				2026 Веліксар Андрій
+			</p>
+		</footer>
+	</body>
+</html>

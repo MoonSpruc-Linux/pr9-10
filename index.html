@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Короткий опис сторінки" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="./styles/responsive.css" />
+		<script src="./js/main.js" defer></script>
+		<title>Мій перший HTML-сайт</title>
+	</head>
+	<body>
+		<header>
+			<nav id="main-nav">
+				<a href="/">Головна</a>
+				|
+				<a href="pages/about.html">Про мене</a>
+				|
+				<a href="pages/contact.html">Контакти</a>
+				|
+				<a href="pages/catalog.html">Католог</a>
+
+				<button id="menu-toggle" aria-expanded="false">☰</button>
+				<button id="theme-toggle">Перемикач теми</button>
+			</nav>
+		</header>
+		<main>
+			<div class="container">
+				<h1>Мій перший HTML-сайт</h1>
+				<h2>Про цей сайт</h2>
+
+				<p>
+					Це мій
+					<strong>перший навчальний HTML сайт</strong>
+					, створений для практики веб-розробки.
+				</p>
+
+				<p>
+					Тут я вчуся використовувати
+					<em>семантичні теги</em>
+					, списки, таблиці та медіа.
+				</p>
+
+				<p>
+					HTML є основою будь-якого веб-сайту і дозволяє створювати структуру
+					сторінок.
+				</p>
+
+				<button type="button" data-modal-open>Відкрити модальне вікно</button>
+
+				<div id="modal" class="modal">
+					<div class="modal-content">
+						<button type="button" data-modal-close>Закрити</button>
+						<p>Тут може бути детальна інформація або зображення</p>
+					</div>
+				</div>
+
+				<h2>Що я вивчаю</h2>
+
+				<ul>
+					<li>HTML структуру</li>
+					<li>Списки</li>
+					<li>Таблиці</li>
+					<li>Форми</li>
+				</ul>
+
+				<h2>Мої цілі</h2>
+
+				<ol>
+					<li>Навчитись створювати сайти</li>
+					<li>Вивчити CSS</li>
+					<li>Вивчити JavaScript</li>
+				</ol>
+
+				<figure>
+					<img
+						src="assets/img/study.jpg"
+						alt="Навчання програмуванню"
+						width="400"
+						height="250"
+					/>
+					<figcaption>Процес навчання веб-розробці</figcaption>
+				</figure>
+
+				<h2>Розклад навчання</h2>
+
+				<table border="1">
+					<caption>Мій розклад</caption>
+
+					<thead>
+						<tr>
+							<th>День</th>
+							<th>Предмет</th>
+							<th>Час</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>Понеділок</td>
+							<td>HTML</td>
+							<td>10:00</td>
+						</tr>
+
+						<tr>
+							<td>Середа</td>
+							<td>CSS</td>
+							<td>12:00</td>
+						</tr>
+
+						<tr>
+							<td>П’ятниця</td>
+							<td>JavaScript</td>
+							<td>14:00</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
+		<footer>
+			<p>
+				&copy;
+				<span id="current-year"></span>
+				2026 Веліксар Андрій
+			</p>
+		</footer>
+	</body>
+</html>
